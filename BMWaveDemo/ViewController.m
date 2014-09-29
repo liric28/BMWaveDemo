@@ -7,9 +7,11 @@
 //
 
 #import "ViewController.h"
+#import "BMWaveButton.h"
 
 @interface ViewController ()
 
+@property (strong, nonatomic) BMWaveButton *bcnBase;
 @end
 
 @implementation ViewController
@@ -17,6 +19,14 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    self.view.backgroundColor = [UIColor grayColor];
+    
+    //初始化
+    _bcnBase = [[BMWaveButton alloc] initWithType:BMWaveButtonDefault Image:@"user"];
+    [_bcnBase StartWave];
+    [self.view addSubview:_bcnBase];
+
 }
 
 - (void)didReceiveMemoryWarning {

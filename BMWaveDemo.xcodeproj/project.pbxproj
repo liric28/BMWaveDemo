@@ -14,6 +14,7 @@
 		84C0994019D8FC9800294A5C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84C0993F19D8FC9800294A5C /* Images.xcassets */; };
 		84C0994319D8FC9800294A5C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84C0994119D8FC9800294A5C /* LaunchScreen.xib */; };
 		84C0994F19D8FC9800294A5C /* BMWaveDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C0994E19D8FC9800294A5C /* BMWaveDemoTests.m */; };
+		84C0995B19D8FCBB00294A5C /* BMWaveButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C0995A19D8FCBB00294A5C /* BMWaveButton.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		84C0994819D8FC9800294A5C /* BMWaveDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BMWaveDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		84C0994D19D8FC9800294A5C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		84C0994E19D8FC9800294A5C /* BMWaveDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BMWaveDemoTests.m; sourceTree = "<group>"; };
+		84C0995919D8FCBB00294A5C /* BMWaveButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMWaveButton.h; sourceTree = "<group>"; };
+		84C0995A19D8FCBB00294A5C /* BMWaveButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMWaveButton.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +84,7 @@
 		84C0993119D8FC9800294A5C /* BMWaveDemo */ = {
 			isa = PBXGroup;
 			children = (
+				84C0995819D8FCBB00294A5C /* BMWaveButton */,
 				84C0993619D8FC9800294A5C /* AppDelegate.h */,
 				84C0993719D8FC9800294A5C /* AppDelegate.m */,
 				84C0993919D8FC9800294A5C /* ViewController.h */,
@@ -117,6 +121,15 @@
 				84C0994D19D8FC9800294A5C /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		84C0995819D8FCBB00294A5C /* BMWaveButton */ = {
+			isa = PBXGroup;
+			children = (
+				84C0995919D8FCBB00294A5C /* BMWaveButton.h */,
+				84C0995A19D8FCBB00294A5C /* BMWaveButton.m */,
+			);
+			path = BMWaveButton;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -222,6 +235,7 @@
 				84C0993B19D8FC9800294A5C /* ViewController.m in Sources */,
 				84C0993819D8FC9800294A5C /* AppDelegate.m in Sources */,
 				84C0993519D8FC9800294A5C /* main.m in Sources */,
+				84C0995B19D8FCBB00294A5C /* BMWaveButton.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -344,6 +358,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = BMWaveDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -354,6 +369,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = BMWaveDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
